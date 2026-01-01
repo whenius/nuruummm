@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Mutlu Yıllar Sevgilim!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="stage">
+        
+        <div id="top-gift-icon" class="hidden">
+            ✉️
+            <p>Tıkla</p>
+        </div>
+
+        <div class="kids-container">
+            
+            <div class="kid-wrapper other-kid">
+                <img src="1.jpg" alt="Çocuk 1" class="kid-img">
+                <div class="bubble bubble-1 hidden">Annişimm!</div>
+            </div>
+
+            <div class="kid-wrapper other-kid">
+                 <img src="2.jpg" alt="Çocuk 2" class="kid-img">
+                <div class="bubble bubble-2 hidden">Yeni yılın...</div>
+            </div>
+
+            <div class="kid-wrapper other-kid">
+                 <img src="3.jpg" alt="Çocuk 3" class="kid-img">
+                <div class="bubble bubble-3 hidden">Kutlu olsun</div>
+            </div>
+
+            <div class="kid-wrapper other-kid">
+                 <img src="4.jpg" alt="Çocuk 4" class="kid-img">
+                <div class="bubble bubble-4 hidden">Seni çok seviyoruzz</div>
+            </div>
+
+            <div class="kid-wrapper findik-wrapper">
+                 <img src="5.jpg" alt="Fındık" class="kid-img">
+                <div class="bubble bubble-5 hidden">Sana bir sürprizimiz var!</div>
+            </div>
+        </div>
+    </div>
+
+    <div id="card-modal" class="modal hidden">
+        <div class="modal-wrapper">
+            <span class="close-modal-btn">&times;</span>
+            <h2 class="modal-title">Tıkla</h2>
+            <div class="cards-container">
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>1.</h3>
+                            <p>Kart</p>
+                        </div>
+                        <div class="card-back">
+                            <span class="close-card" onclick="closeCard(event, this)">x</span>
+                            <h3>Öpücük</h3>
+                            <p>Bu kartla istediğin zaman babamdan 99999 öpücük alabilirsin</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>2.</h3>
+                            <p>Kart</p>
+                        </div>
+                        <div class="card-back">
+                            <span class="close-card" onclick="closeCard(event, this)">x</span>
+                            <h3>Yavrularımız</h3>
+                            <p>Bu kartla istediğin zaman bize tüm gün babamız bakıcak</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="card" onclick="flipCard(this)">
+                    <div class="card-inner">
+                        <div class="card-front">
+                            <h3>3.</h3>
+                            <p>Kart</p>
+                        </div>
+                        <div class="card-back">
+                            <span class="close-card" onclick="closeCard(event, this)">x</span>
+                            <h3>Başlık bulamadım</h3>
+                            <p>Bu kartla babam istediğin bişeyi reddetmeden yapıcakk</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
